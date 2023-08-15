@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1px;
+    height: 100vh;
+}
+
+.main .s1 {
+    grid-row: 1/3;
+}
+
+.main .s5 {
+    grid-column: 2/-1;
+}
+
+.item {
+    display: grid;
+    background-position: center;
+    background-size: cover;
+    align-items: end;
+    color: #fff;
+}
+
+.item :where(article, header) {
+    padding: 30px;
+}
+
+
+
+.item article :where(h1, p) {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.item article h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.item article p {
+    font-size: 14px;
+}
+
+.item:not(:first-child, :last-child) article h1 {
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+
+.item:not(:first-child) article p {
+    font-size: 12px;
+}
+
+span.date {
+    background-color: rgba(9, 206, 178, 0.58);
+    padding: 2px 7px;
+    margin-left: 2px;
+    border-radius: 2px;
+}
+
+.s1 header h1 {
+    font-size: 70px;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+
+.s1 {
+    background-image: url("../images/bg1.jpg");
+}
+
+.s5 {
+    background-image: url("../images/bg10.jpg");
+    background-position-y: bottom;
+}
+
+.s2 {
+    background-image: url("../images/bg7.jpg");
+}
+
+.s3 {
+    background-image: url("../images/bg9.jpg");
+}
+
+.s4 {
+    background-image: url("../images/bg11.jpg");
+}
